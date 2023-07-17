@@ -1,9 +1,11 @@
 import "./Square.css";
 
-export default function Square() {
+export default function Square({ value, setValue }) {
   return (
     <>
-      <button className="square"></button>
+      <button className="square" onClick={setValue}>
+        {value}
+      </button>
     </>
   );
 }

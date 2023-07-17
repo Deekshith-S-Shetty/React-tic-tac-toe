@@ -1,7 +1,11 @@
 .square {
   background-color: #ffff;
   border: 1px solid #999;
-  padding: 50px;
+  width: 120px;
+  height: 120px;
   margin-top: -1px;
   margin-right: -1px;
+  font-size: 50px;
+  font-weight: bold;
+  vertical-align: bottom;
 }
