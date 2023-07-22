@@ -1,1 +1,9 @@
+.status {
+  text-decoration: underline;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 25px;
+}
 
+.board {
+  display: inline-block;
+}

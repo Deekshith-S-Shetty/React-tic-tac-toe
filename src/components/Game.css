@@ -1,0 +1,16 @@
+.game-board,
+.game-moves {
+  display: inline-block;
+  width: 400px;
+}
+
+.game-moves {
+  vertical-align: top;
+  margin-top: 67px;
+}
+
+.moves {
+  margin: 10px;
+  border-radius: 5px;
+  padding: 3px 8px;
+}
