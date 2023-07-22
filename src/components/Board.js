@@ -23,7 +23,6 @@ function calculateWinner(square) {
 }
 
 export default function Board({ isX, square, onPlay }) {
-  console.log(square);
   function handleClick(i) {
     if (calculateWinner(square) || square[i]) return;
 
@@ -38,12 +37,12 @@ export default function Board({ isX, square, onPlay }) {
   if (winner) {
     status = "Winner: " + winner;
   } else {
-    status = "Current player: " + (isX ? "X" : "O");
+    status = "Current Player: " + (isX ? "X" : "O");
   }
 
   return (
     <>
-      <h1>{status}</h1>
+      <h1 className="status">{status}</h1>
       <div className="board">
         <div className="board-row">
           <Square value={square[0]} setValue={() => handleClick(0)} />
